@@ -21,3 +21,8 @@ CMakelists.txt.user
 *.kdev4
 doc
 doc/*
+
+#emacs
+*~
+\#*#
+.\#*

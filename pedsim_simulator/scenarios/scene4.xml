@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This scenario file was created by SGDiCoP on 2014-02-13T14:16:42-->
+<scenario>
+    <!--Obstacles-->
+    <obstacle x1="0" y1="0" x2="50" y2="0"/>
+    <obstacle x1="0" y1="50" x2="50" y2="50"/>
+    <obstacle x1="0" y1="0" x2="0" y2="50"/>
+    <obstacle x1="50" y1="0" x2="50" y2="50"/>
+    <!--Waypoints (incl. WaitingQueues)-->
+    <waypoint id="check_a" x="10" y="10" r="5"/>
+    <waypoint id="check_b" x="40" y="10" r="5"/>
+    <waypoint id="check_c" x="40" y="40" r="5"/>
+    <waypoint id="check_d" x="10" y="40" r="5"/>
+    <!-- <waypoint id="robot_goal" x="80" y="80" r="5"/> -->
+    <!-- <waypoint id="robot_start" x="20" y="20" r="5"/> -->
+    <!--Attractions-->
+    
+    <!-- <agent x="30" y="40" n="1" dx="0" dy="0" type="2"> -->
+    <!--     <addwaypoint id="check_c"/> -->
+    <!--     <addwaypoint id="check_a"/> -->
+    <!-- </agent> -->
+
+
+    <!-- flows -->
+    <agent x="20" y="10" n="25" dx="20" dy="10" type="0">
+        <addwaypoint id="check_a"/>
+        <addwaypoint id="check_b"/>
+        <addwaypoint id="check_c"/>
+        <addwaypoint id="check_d"/>
+    </agent>
+    <agent x="30" y="40" n="10" dx="20" dy="10" type="0">
+        <addwaypoint id="check_c"/>
+        <addwaypoint id="check_a"/>
+    </agent>
+
+</scenario>
